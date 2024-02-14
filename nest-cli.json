@@ -5,7 +5,11 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/pm2/tsconfig.app.json"
+    "tsConfigPath": "apps/pm2/tsconfig.app.json",
+    "assets": [
+      "**/*.proto"
+    ],
+    "watchAssets": true
   },
   "monorepo": true,
   "root": "apps/pm2",
