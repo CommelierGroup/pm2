@@ -24,8 +24,10 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/microservices": "^10.3.3",
     "@nestjs/platform-express": "^10.0.0",
+    "protoc-gen-js": "^3.21.2",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "ts-protoc-gen": "^0.15.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
