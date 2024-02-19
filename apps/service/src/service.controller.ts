@@ -8,7 +8,7 @@ export class ServiceController {
   }
 
   @GrpcMethod('Service')
-  call(request: Empty): Answer {
+  Hello(request: Empty): Answer {
     return { answer: 'This is Service' };
   }
 }
