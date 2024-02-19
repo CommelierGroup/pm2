@@ -1,0 +1,15 @@
+// https://blog.logrocket.com/using-protobuf-typescript-data-serialization/
+
+syntax = "proto3";
+
+package service;
+
+service Service {
+    rpc Hello (Empty) returns (Answer);
+}
+
+message Empty {}
+
+message Answer {
+    string answer = 1;
+}
