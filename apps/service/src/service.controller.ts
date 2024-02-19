@@ -1,12 +1,14 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller } from '@nestjs/common';
+import { GrpcMethod } from '@nestjs/microservices';
+import { Answer, Empty, Service } from '../../proto/service';
 
 @Controller()
 export class ServiceController {
   constructor() {
   }
 
-  @Get()
-  getHello(): string {
-    return 'hi';
+  @GrpcMethod('Service')
+  call(request: Empty): Answer {
+    return { answer: 'This is Service' };
   }
 }
