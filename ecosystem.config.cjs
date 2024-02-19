@@ -1,9 +1,11 @@
 module.exports = {
-    apps: [{
-        name: 'main',
-        script: './main.js',
-    }, {
-        name: 'service',
-        script: './service.js',
-    }],
+  apps: [{
+    name: 'main',
+    script: 'node ./dist/apps/pm2/main.js',
+    watch: true,
+  }, {
+    name: 'service',
+    script: 'node ./dist/apps/service/main.js',
+    watch: true,
+  }],
 };
