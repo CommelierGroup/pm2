@@ -4,4 +4,4 @@ nest build pm2
 
 nest build service
 
-pm2 start ecosystem.config.cjs
+pm2-runtime start ecosystem.config.cjs
