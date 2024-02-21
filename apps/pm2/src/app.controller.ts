@@ -1,6 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
-import { Answer } from '../../proto/service';
+import { Controller, Get } from '@nestjs/common'
+import { AppService } from './app.service'
+import { Answer } from '../../proto/service'
 
 
 @Controller()
@@ -10,11 +10,11 @@ export class AppController {
 
   @Get()
   root(): string {
-    return this.appService.getRoot();
+    return this.appService.getRoot()
   }
 
   @Get('/service')
   service(): Promise<Answer> {
-    return this.appService.callServiceApp();
+    return this.appService.callServiceApp()
   }
 }
